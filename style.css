@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@500&display=swap');
 
 :root {
   --creme: #f8f5f1;
@@ -14,7 +13,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lora', serif;
   background-color: var(--creme);
   color: var(--taupe);
   line-height: 1.6;
