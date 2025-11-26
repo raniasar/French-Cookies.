@@ -102,7 +102,7 @@ nav a.active::after {
 
 
 .hero-text h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
   font-size: 2.5rem;  /* Ajuste la taille du texte */
 }
 
@@ -148,7 +148,7 @@ nav a.active::after {
 }
 
 .about-text h2 {
-  font-family: 'Playfair Display', serif;
+ font-family: 'Lora', serif;
   font-size: 2.2rem;
   color: var(--taupe);
   margin-bottom: 20px;
@@ -234,7 +234,7 @@ footer p {
 }
 
 .products-hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
   font-size: 2.5rem;
   color: var(--taupe);
 }
@@ -277,7 +277,7 @@ footer p {
 }
 
 .product-card h3 {
-  font-family: 'Playfair Display', serif;
+ font-family: 'Lora', serif;
   font-size: 1.3rem;
   color: var(--taupe);
   margin-bottom: 10px;
@@ -306,7 +306,7 @@ footer p {
 }
 
 .contact-hero h1 {
-  font-family: 'Playfair Display', serif;
+font-family: 'Lora', serif;
   font-size: 2.5rem;
   color: var(--taupe);
 }
@@ -342,7 +342,7 @@ footer p {
 }
 
 .contact-info h2, .contact-form h2 {
-  font-family: 'Playfair Display', serif;
+font-family: 'Lora', serif;
   color: var(--taupe);
   margin-bottom: 20px;
 }
@@ -374,7 +374,7 @@ footer p {
   border-radius: 10px;
   padding: 12px;
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+font-family: 'Lora', serif;
 }
 
 .contact-form .btn {
