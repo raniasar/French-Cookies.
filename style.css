@@ -406,3 +406,6 @@ h2::after {
   content: none !important;
   display: none !important;
 }
+#histoire {
+  scroll-margin-top: 150px;
+}
