@@ -8,21 +8,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="fade-in">
-   <div class="logo">
-<a href="index.html">
-      <img src="images/logo french cookies.jpg" alt="Cookies Frenchy"/>
+<header class="header">
+
+  <nav class="nav-left">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#histoire">Notre histoire</a>
+  </nav>
+
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo french cookies.jpg" alt="logo">
     </a>
   </div>
-    <nav>  
-  <ul>  
-      <li><a href="index.html" class="active">Accueil</a></li>  
-    <li><a href="#histoire">Notre histoire</a></li>
-    <li><a href="produits.html">Nos cookies</a></li>  
-    <li><a href="contact.html">Nous contacter</a></li>  
-  </ul>  
-</nav>
-  </header>
+
+  <nav class="nav-right">
+    <a href="produits.html">Nos cookies</a>
+    <a href="contact.html">Nous contacter</a>
+  </nav>
+
+  <!-- MENU BURGER -->
+  <div class="burger">
+    <div></div><div></div><div></div>
+  </div>
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#histoire">Notre histoire</a>
+    <a href="produits.html">Nos cookies</a>
+    <a href="contact.html">Nous contacter</a>
+  </div>
+
+</header>
+
 
   <main class="fade-in">
        <section class="products-hero">
