@@ -197,13 +197,11 @@ body{
   text-align:center;
   margin-bottom:40px; /* titre au-dessus, espace en dessous */
 }
-.about-container{
-  max-width:1100px;
-  margin:0 auto;
-  display:flex;
-  align-items:center;
-  gap:42px;
-  flex-wrap:wrap;
+.about-container {
+  display: flex;
+  align-items: flex-start; /* Titre en haut par rapport à l'image */
+  gap: 42px;
+  flex-wrap: wrap;
 }
 .about-image img{
   width:420px;
@@ -214,10 +212,11 @@ body{
 .about-text{ flex:1; min-width:260px }
 
 /* texte et couleur */
-.about-text h1{
-  font-size:2.1rem;
-  color:var(--taupe);
-  margin-bottom:14px;
+
+.about-text h1 {
+  font-size: 2.1rem;
+  color: var(--taupe);
+  margin-bottom: 20px; /* espace sous le titre */
 }
 .about-text p{ color:var(--texte-primaire); margin-bottom:12px; font-size:1.03rem }
 
