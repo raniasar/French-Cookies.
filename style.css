@@ -196,18 +196,19 @@ body{
 
 .about h1{
   text-align:center;
-  margin-bottom:40px; /* titre au-dessus de la photo */
+  margin-bottom:40px; /* titre juste au-dessus de la section */
 }
 
 .about-container{
   display:flex;
-  align-items:flex-start; /* texte en haut par rapport à la photo */
-  gap:42px;
+  align-items:flex-start; /* texte en haut par rapport à l'image */
+  gap:20px; /* réduit l'espace entre photo et texte */
   flex-wrap:wrap;
+  justify-content:center; /* centre le contenu pour que ce soit plus équilibré */
 }
 
 .about-image img{
-  width:420px;
+  width:350px; /* un peu plus petit pour que texte soit proche */
   max-width:100%;
   border-radius:14px;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
@@ -215,20 +216,23 @@ body{
 
 .about-text{
   flex:1;
-  min-width:260px;
+  min-width:250px; /* réduit pour que texte reste proche de la photo */
 }
 
 /* texte et couleur */
 .about-text h1{
   font-size:2.1rem;
-  color:var(--taupe);
+  color: var(--taupe);
   margin-bottom:20px;
 }
 
 .about-text p{
-  color:var(--texte-primaire);
+  color: var(--texte-primaire);
   margin-bottom:12px;
   font-size:1.03rem;
+}
+.about-text p:first-child{
+  font-weight:bold; /* première phrase en gras */
 }
 
 /* éviter que le header cache le contenu */
