@@ -193,37 +193,48 @@ body{
   padding:100px 20px;
   background:var(--creme);
 }
-.about h1 {
-  text-align: center;
-  margin-bottom: 40px; /* espace sous le titre */
+
+.about h1{
+  text-align:center;
+  margin-bottom:40px; /* titre au-dessus de la photo */
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 42px;
-  align-items: flex-start; /* photo et texte alignés en haut */
+.about-container{
+  display:flex;
+  align-items:flex-start; /* texte en haut par rapport à la photo */
+  gap:42px;
+  flex-wrap:wrap;
 }
 
-.about-image img {
-  width: 420px;
-  max-width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+.about-image img{
+  width:420px;
+  max-width:100%;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
-.about-text{ flex:1; min-width:260px }
+
+.about-text{
+  flex:1;
+  min-width:260px;
+}
 
 /* texte et couleur */
-
-.about-text {
-  flex: 1;
-  min-width: 260px;
-}.about-text p:first-of-type {
-  font-weight: bold; /* première phrase en gras */
+.about-text h1{
+  font-size:2.1rem;
+  color:var(--taupe);
+  margin-bottom:20px;
 }
 
-/* ensure when anchored the header doesn't hide the content */
-#histoire{ scroll-margin-top:120px }
+.about-text p{
+  color:var(--texte-primaire);
+  margin-bottom:12px;
+  font-size:1.03rem;
+}
+
+/* éviter que le header cache le contenu */
+#histoire{
+  scroll-margin-top:120px;
+}
 
 /* ========== PRODUCTS ========== */
 .products-hero{ text-align:center; padding:80px 20px 40px; background:var(--creme) }
