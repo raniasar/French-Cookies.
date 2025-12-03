@@ -7,38 +7,36 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header class="header">
 
-  <!-- Nav gauche -->
   <nav class="nav-left">
     <a href="index.html">Accueil</a>
-    <a href="index.html#histoire">Notre histoire</a>
+    <a href="#histoire">Notre histoire</a>
   </nav>
 
-  <!-- Logo centré -->
   <div class="logo">
     <a href="index.html">
       <img src="images/logo french cookies.jpg" alt="logo">
     </a>
   </div>
 
-  <!-- Nav droite -->
   <nav class="nav-right">
     <a href="produits.html">Nos cookies</a>
     <a href="contact.html">Nous contacter</a>
   </nav>
 
-  <!-- Burger menu mobile -->
+  <!-- BURGER -->
   <div class="burger">
-    <div></div><div></div><div></div>
+    <span></span><span></span><span></span>
   </div>
 
-  <!-- Menu mobile -->
+  <!-- MENU MOBILE -->
   <div class="mobile-menu">
     <a href="index.html">Accueil</a>
-    <a href="index.html#histoire">Notre histoire</a>
+    <a href="#histoire">Notre histoire</a>
     <a href="produits.html">Nos cookies</a>
     <a href="contact.html">Nous contacter</a>
   </div>
@@ -46,7 +44,7 @@
 </header>
 
 <main>
-  <!-- HERO -->
+
   <section class="hero fade-in">
     <img src="images/BACKGROUND.jpg" class="hero-image">
     <div class="hero-text">
@@ -56,20 +54,20 @@
     </div>
   </section>
 
-  <!-- HISTOIRE -->
   <section id="histoire" class="about fade-in">
     <div class="about-container">
       <div class="about-image">
-        <img src="images/APROPOS.jpg" alt="Notre Histoire">
+        <img src="images/APROPOS.jpg">
       </div>
       <div class="about-text">
         <h1>NOTRE HISTOIRE</h1>
-        <p>Nous sommes les élèves de première MCV option commerce et vente du lycée professionnel Les Canuts. Nous avons créé la marque French Cookies.</p>
-        <p>French Cookies, c’est la création d’un cookie entièrement fabriqué par les élèves de la filière PSR du Lycée Les Canuts et commercialisé par les élèves de Première Métiers du Commerce et de la Vente (1MCV).</p>
+        <p>Nous sommes les élèves de première MCV option commerce et vente du lycée professionnel Les Canuts.</p>
+        <p>French Cookies est un cookie entièrement fabriqué par les élèves de la filière PSR et commercialisé par la 1MCV.</p>
         <p>Chaque cookie est préparé avec soin et amour.</p>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer>
@@ -92,23 +90,11 @@
       <a href="https://www.instagram.com/frenchcookies31" target="_blank">Instagram</a>
     </div>
   </div>
-  <p class="copyright">&copy; 2025 French Cookies. Tous droits réservés.</p>
+  <p class="copyright">© 2025 French Cookies. Tous droits réservés.</p>
 </footer>
 
-<!-- JS Burger -->
-<script>
-  const burger = document.querySelector(".burger");
-  const mobileMenu = document.querySelector(".mobile-menu");
-
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    mobileMenu.classList.toggle("active");
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
-     <p class="copyright">&copy; 2025 French Cookies. Tous droits réservés.</p>
-  </footer>
-</body>
-</html>
+
