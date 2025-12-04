@@ -408,47 +408,42 @@ footer p{ text-align:center; margin-top:20px; opacity:0.9 }
   color:rgba(0,0,0,0.5);
 }
 /* ========== VIDEO HERO ========== */
+/* ========== VIDEO HERO ========== */
 .video-hero{
-  padding:60px 20px;
-  background:var(--creme);
-  display:flex;
-  justify-content:center; 
-}
-
-.video-container{
   position:relative;
-  max-width:1100px;
   width:100%;
-  border-radius:14px;
+  height:500px;
   overflow:hidden;
+  margin-bottom:60px; /* espace avant la section histoire */
+  border-radius:14px;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
-.video-container video{
+.video-hero video{
   width:100%;
-  height:auto;
-  display:block;
+  height:100%;
   object-fit:cover;
 }
 
-.video-text{
+.video-overlay{
   position:absolute;
-  bottom:20px;
-  left:20px;
-  background:rgba(0,0,0,0.4);
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
   color:var(--blanc);
-  padding:20px 25px;
+  text-align:center;
+  background:rgba(0,0,0,0.35);
+  padding:30px 40px;
   border-radius:12px;
-  max-width:70%;
 }
 
-.video-text h2{
-  font-size:2rem;
-  margin-bottom:8px;
+.video-overlay h2{
+  font-size:2.4rem;
+  margin-bottom:12px;
 }
 
-.video-text p{
-  font-size:1.05rem;
+.video-overlay p{
+  font-size:1.1rem;
 }
 
 
