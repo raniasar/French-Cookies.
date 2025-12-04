@@ -412,7 +412,7 @@ footer p{ text-align:center; margin-top:20px; opacity:0.9 }
   padding:60px 20px;
   background:var(--creme);
   display:flex;
-  justify-content:center;
+  justify-content:center; 
 }
 
 .video-container{
