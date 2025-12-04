@@ -198,13 +198,13 @@ body{
   text-align:center;
   margin-bottom:40px; /* titre juste au-dessus de la section */
 }
-
 .about-container{
   display:flex;
-  align-items:flex-start; /* texte en haut par rapport à l'image */
-  gap:20px; /* réduit l'espace entre photo et texte */
-  flex-wrap:wrap;
-  justify-content:center; /* centre le contenu pour que ce soit plus équilibré */
+  justify-content:center;  /* centre horizontalement */
+  align-items:center;      /* aligne photo + texte au milieu */
+  gap:40px;                /* espace équilibré */
+  max-width:1100px;        /* limite la largeur pour centrer visuellement */
+  margin:0 auto;           /* centre le bloc */
 }
 
 .about-image img{
@@ -215,8 +215,8 @@ body{
 }
 
 .about-text{
-  flex:1;
-  min-width:250px; /* réduit pour que texte reste proche de la photo */
+  flex:0 1 500px;          /* largeur contrôlée et centrée */
+  text-align:left;         /* texte normal, pas centré */
 }
 
 /* texte et couleur */
