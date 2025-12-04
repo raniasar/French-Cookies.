@@ -164,16 +164,16 @@ body{
 .hero-text{
   position:relative;
   z-index:2;
-  background:rgba(0,0,0,0.45);
+  background:rgba(0,0,0,0.50); /* un peu plus visible */
   color:var(--blanc);
-  padding:34px;
-  border-radius:12px;
-  max-width:800px;
+  padding:50px 45px;           /* AGRANDI */
+  border-radius:14px;
+  max-width:900px;             /* plus large */
+  transform: scale(1.08);      /* zoom léger */
 }
 .hero-text h1{
-  font-size:2.6rem;
-  margin-bottom:10px;
-  letter-spacing:0.5px;
+  font-size:3rem;              /* titre plus grand */
+  margin-bottom:14px;
 }
 .hero-text p{ color:rgba(255,255,255,0.95); margin-bottom:14px }
 .btn{
