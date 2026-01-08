@@ -529,6 +529,7 @@ a {
 .section-header {
   max-width: var(--container-max);
   margin: 0 auto 80px;
+  text-align: center;
 }
 
 .section-header.centered {
