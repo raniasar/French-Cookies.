@@ -3,103 +3,501 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>French Cookies - Actualités</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Actualités - French Cookies</title>
+  <meta name="description" content="Découvrez les actualités de French Cookies. Nouveautés, événements et coulisses de notre projet étudiant.">
+  
+  <link rel="stylesheet" href="style-pro.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
-<body>
-<header class="header">
 
-  <!-- NAV GAUCHE -->
+<body>
+
+<div class="scroll-progress"></div>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<header class="header" id="header">
   <nav class="nav-left">
-    <a href="index.html">Accueil</a>
-    <a href="#histoire">Notre histoire</a>
-    <a href="produits.html">Nos cookies</a>
+    <a href="index.html" class="nav-link">
+      <span class="nav-text">Accueil</span>
+      <span class="nav-line"></span>
+    </a>
+    <a href="index.html#histoire" class="nav-link">
+      <span class="nav-text">Notre histoire</span>
+      <span class="nav-line"></span>
+    </a>
+    <a href="produits.html" class="nav-link">
+      <span class="nav-text">Nos cookies</span>
+      <span class="nav-line"></span>
+    </a>
   </nav>
 
-  <!-- LOGO -->
   <div class="logo">
     <a href="index.html">
-      <img src="images/logo french cookies.jpg" alt="logo" />
+      <img src="images/logo french cookies.jpg" alt="French Cookies Logo">
+      <div class="logo-glow"></div>
     </a>
   </div>
 
-  <!-- NAV DROITE -->
   <nav class="nav-right">
-     <a href="presse.html">Actualités</a>
-    <a href="contact.html">Nous contacter</a> 
+    <a href="presse.html" class="nav-link">
+      <span class="nav-text">Actualités</span>
+      <span class="nav-line"></span>
+    </a>
+    <a href="contact.html" class="nav-link">
+      <span class="nav-text">Contact</span>
+      <span class="nav-line"></span>
+    </a>
   </nav>
 
-  <!-- BURGER -->
   <div class="burger">
-    <div></div><div></div><div></div>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
-  <!-- MENU MOBILE -->
   <div class="mobile-menu">
-    <a href="index.html">Accueil</a>
-    <a href="index.html#histoire">Notre histoire</a>
-    <a href="produits.html">Nos cookies</a>
-      <a href="presse.html">Actualités</a>
-    <a href="contact.html">Nous contacter</a>
+    <div class="mobile-menu-content">
+      <a href="index.html" class="mobile-link">
+        <span class="mobile-number">01</span>
+        <span>Accueil</span>
+      </a>
+      <a href="index.html#histoire" class="mobile-link">
+        <span class="mobile-number">02</span>
+        <span>Notre histoire</span>
+      </a>
+      <a href="produits.html" class="mobile-link">
+        <span class="mobile-number">03</span>
+        <span>Nos cookies</span>
+      </a>
+      <a href="presse.html" class="mobile-link">
+        <span class="mobile-number">04</span>
+        <span>Actualités</span>
+      </a>
+      <a href="contact.html" class="mobile-link">
+        <span class="mobile-number">05</span>
+        <span>Contact</span>
+      </a>
+    </div>
+    <div class="mobile-menu-footer">
+      <p>frenchcookies@gmail.com</p>
+      <a href="https://www.instagram.com/frenchcookies31" target="_blank">Instagram ↗</a>
+    </div>
   </div>
-
 </header>
+
 <main>
 
-  <section class="products-hero">
-    <h1>Actualités</h1>
-    <p>Restez informé des dernières nouveautés French Cookies</p>
+  <!-- HERO PAGE -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="page-label">— Nos nouvelles</span>
+      <h1 class="page-title">Actualités</h1>
+      <p class="page-subtitle">Suivez l'aventure French Cookies au quotidien</p>
+    </div>
+    <div class="hero-decoration"></div>
   </section>
 
-  <section class="product-grid">
-    <!-- Exemple de carte actualité -->
-    <div class="product-card">
-      <img src="images/news1.jpg" alt="Nouvelle recette">
-      <h3>Nouvelle recette : Cookies au chocolat blanc</h3>
-      <p>Découvrez notre nouvelle recette gourmande pour régaler vos papilles !</p>
-      <a href="#" class="btn">Lire plus</a>
-    </div>
+  <!-- ACTUALITÉS GRID -->
+  <section class="news-section">
+    <div class="news-grid">
+      
+      <!-- Article 1 -->
+      <article class="news-card featured">
+        <div class="news-image">
+          <img src="images/APROPOS.jpg" alt="Lancement French Cookies">
+          <div class="news-badge">À la une</div>
+        </div>
+        <div class="news-content">
+          <span class="news-date">24 septembre 2025</span>
+          <h2>Lancement officiel de French Cookies</h2>
+          <p>C'est avec une grande fierté que nous annonçons le lancement de French Cookies ! Notre projet, mené par les élèves de 1ère MCV du lycée Les Canuts, devient réalité.</p>
+          <a href="#" class="news-link">
+            <span>Lire la suite</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
 
-    <div class="product-card">
-      <img src="images/news2.jpg" alt="Événement local">
-      <h3>Événement local : Marché des artisans</h3>
-      <p>Retrouvez-nous ce week-end au marché des artisans pour des dégustations.</p>
-      <a href="#" class="btn">Lire plus</a>
-    </div>
+      <!-- Article 2 -->
+      <article class="news-card">
+        <div class="news-image">
+          <img src="images/coockies-chocolat-noir.jpg" alt="Nouvelle recette">
+          <div class="news-badge new">Nouveau</div>
+        </div>
+        <div class="news-content">
+          <span class="news-date">15 janvier 2025</span>
+          <h3>Nouvelle recette : Cookie Chocolat & Nutella</h3>
+          <p>Découvrez notre dernière création : un cookie généreux au chocolat noir et Nutella fondant. Un vrai délice !</p>
+          <a href="#" class="news-link">
+            <span>Lire la suite</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
 
-    <div class="product-card">
-      <img src="images/news3.jpg" alt="Offre spéciale">
-      <h3>Offre spéciale Noël</h3>
-      <p>Profitez de nos offres exclusives pour les fêtes de fin d'année !</p>
-      <a href="#" class="btn">Lire plus</a>
+      <!-- Article 3 -->
+      <article class="news-card">
+        <div class="news-image">
+          <img src="images/spécilos.jpeg" alt="Collaboration PSR">
+          <div class="news-badge collab">Collaboration</div>
+        </div>
+        <div class="news-content">
+          <span class="news-date">10 décembre 2024</span>
+          <h3>Collaboration avec la filière PSR</h3>
+          <p>Notre projet prend vie grâce à la collaboration avec les élèves de PSR qui fabriquent nos cookies avec passion.</p>
+          <a href="#" class="news-link">
+            <span>Lire la suite</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="news-card">
+        <div class="news-image">
+          <img src="images/cokiesno.jpeg" alt="Étude de marché">
+        </div>
+        <div class="news-content">
+          <span class="news-date">5 novembre 2024</span>
+          <h3>Les coulisses de notre étude de marché</h3>
+          <p>Découvrez comment nous avons élaboré notre stratégie commerciale et identifié nos clients cibles.</p>
+          <a href="#" class="news-link">
+            <span>Lire la suite</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="news-card">
+        <div class="news-image">
+          <img src="images/BACKGROUND.jpg" alt="Première vente">
+          <div class="news-badge success">Succès</div>
+        </div>
+        <div class="news-content">
+          <span class="news-date">20 octobre 2024</span>
+          <h3>Nos premières ventes : un succès !</h3>
+          <p>Retour sur nos premières ventes et les retours enthousiastes de nos clients. Merci pour votre soutien !</p>
+          <a href="#" class="news-link">
+            <span>Lire la suite</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="news-card">
+        <div class="news-image">
+          <img src="images/APROPOS.jpg" alt="Réseaux sociaux">
+        </div>
+        <div class="news-content">
+          <span class="news-date">1er octobre 2024</span>
+          <h3>Rejoignez-nous sur Instagram !</h3>
+          <p>Suivez nos aventures, nos coulisses et nos nouveautés sur notre compte Instagram @frenchcookies31</p>
+          <a href="https://www.instagram.com/frenchcookies31" target="_blank" class="news-link">
+            <span>Suivre</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="newsletter-content">
+      <h2>Restez informé</h2>
+      <p>Inscrivez-vous pour recevoir nos actualités et offres exclusives</p>
+      <form class="newsletter-form" action="#" method="POST">
+        <input type="email" placeholder="Votre email" required>
+        <button type="submit" class="btn-newsletter">
+          <span>S'inscrire</span>
+          <span>→</span>
+        </button>
+      </form>
     </div>
   </section>
 
 </main>
 
-<footer>
-  <div class="footer-content">
-    <div>
-      <h3>Navigation</h3>
-      <ul>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <h3 class="footer-title">Navigation</h3>
+      <ul class="footer-links">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="index.html#histoire">Notre histoire</a></li>
         <li><a href="produits.html">Nos cookies</a></li>
-        <li><a href="contact.html">Nous contacter</a></li>
-        <li><a href="presse.html.html">Actualités</a></li>
+        <li><a href="presse.html">Actualités</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <div>
-      <h3>Contact</h3>
-      <p>Email : frenchcookies@gmail.com</p>
+    <div class="footer-col">
+      <h3 class="footer-title">Contact</h3>
+      <p>frenchcookies@gmail.com</p>
+      <p>Lycée Les Canuts</p>
+      <p>Vaulx-en-Velin</p>
     </div>
-    <div>
-      <h3>Réseaux</h3>
-      <a href="https://www.instagram.com/frenchcookies31">Instagram</a>
+    <div class="footer-col">
+      <h3 class="footer-title">Suivez-nous</h3>
+      <a href="https://www.instagram.com/frenchcookies31" target="_blank" class="social-link">
+        <span>Instagram</span>
+        <span class="social-arrow">↗</span>
+      </a>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 French Cookies. Tous droits réservés.</p>
+    <p>Fait avec ❤️ par les élèves de 1ère MCV</p>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script-pro.js"></script>
+
+<style>
+/* Styles spécifiques page actualités */
+.news-section {
+  padding: 100px 20px;
+  background: var(--color-cream);
+}
+
+.news-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.news-card {
+  background: var(--color-white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s var(--ease-smooth);
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.news-card.featured {
+  grid-column: span 2;
+}
+
+.news-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.news-card.featured .news-image {
+  height: 400px;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.news-card:hover img {
+  transform: scale(1.1);
+}
+
+.news-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  background: var(--gradient-gold);
+  color: var(--color-dark);
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.news-badge.new {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+}
+
+.news-badge.collab {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+}
+
+.news-badge.success {
+  background: linear-gradient(135deg, #51cf66 0%, #37b24d 100%);
+  color: white;
+}
+
+.news-content {
+  padding: 30px;
+}
+
+.news-date {
+  display: block;
+  font-size: 13px;
+  color: var(--color-caramel);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.news-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--color-taupe);
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.news-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--color-taupe);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.news-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-dark);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.news-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-caramel);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: gap 0.3s;
+}
+
+.news-link:hover {
+  gap: 12px;
+}
+
+.link-arrow {
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.news-link:hover .link-arrow {
+  transform: translateX(3px);
+}
+
+/* Newsletter */
+.newsletter-section {
+  padding: 100px 20px;
+  background: var(--gradient-dark);
+  text-align: center;
+}
+
+.newsletter-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: var(--color-white);
+  margin-bottom: 15px;
+}
+
+.newsletter-content p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 40px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 16px 24px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 50px;
+  background: rgba(255,255,255,0.1);
+  color: var(--color-white);
+  font-size: 15px;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s;
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: var(--color-caramel);
+  background: rgba(255,255,255,0.15);
+}
+
+.btn-newsletter {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: var(--gradient-gold);
+  color: var(--color-dark);
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.btn-newsletter:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(209, 163, 106, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-card.featured {
+    grid-column: span 1;
+  }
+  
+  .news-card.featured .news-image {
+    height: 250px;
+  }
+  
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+</style>
+
 </body>
 </html>
