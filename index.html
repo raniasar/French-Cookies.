@@ -179,7 +179,7 @@
     </div>
   </section>
 
-  <!-- VIDEO SECTION CINÉMATIQUE -->
+  <!-- VIDEO SECTION CINÉMATIQUE - MODIFIÉ AVEC 2 VIDÉOS YOUTUBE -->
   <section class="video-section">
     <div class="section-header centered">
       <span class="section-label">— 02</span>
@@ -187,24 +187,39 @@
       <p class="section-subtitle">Découvrez la passion derrière nos créations</p>
     </div>
 
-    <div class="video-container">
-      <video class="video-player" muted loop playsinline>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
-      <div class="video-overlay-gradient"></div>
-      
-      <div class="video-controls">
-        <button class="play-btn" aria-label="Play video">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="19" stroke="white" stroke-width="2"/>
-            <path d="M15 12L28 20L15 28V12Z" fill="white"/>
-          </svg>
-        </button>
+    <div class="videos-grid">
+      <!-- Vidéo 1 -->
+      <div class="video-container">
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/BNcV8rKJF4c" 
+            title="French Cookies - Coulisses 1"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h3>Notre atelier de fabrication</h3>
+          <p>Découvrez comment nos cookies prennent vie</p>
+        </div>
       </div>
 
-      <div class="video-content">
-        <h3>Une fabrication artisanale</h3>
-        <p>Du pétrissage à la cuisson, chaque étape est réalisée avec soin par nos élèves</p>
+      <!-- Vidéo 2 -->
+      <div class="video-container">
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/7yerRAPgmqo" 
+            title="French Cookies - Coulisses 2"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h3>L'équipe en action</h3>
+          <p>Rencontrez les artisans de French Cookies</p>
+        </div>
       </div>
     </div>
   </section>
