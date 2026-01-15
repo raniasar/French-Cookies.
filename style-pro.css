@@ -171,15 +171,24 @@ a {
   transform: translateY(0);
 }
 
-/* Logo Central */
+/* Logo Central - MODIFIÉ : entouré de blanc */
 .logo {
   position: relative;
   transition: transform 0.4s var(--ease-smooth);
+  background: var(--color-white);
+  padding: 15px 25px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(123, 94, 64, 0.15);
+  border: 2px solid rgba(209, 163, 106, 0.2);
 }
 
 .logo img {
   height: 90px;
   transition: height 0.4s var(--ease-smooth);
+}
+
+.header.scrolled .logo {
+  padding: 12px 20px;
 }
 
 .header.scrolled .logo img {
@@ -188,6 +197,8 @@ a {
 
 .logo:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(123, 94, 64, 0.25);
+  border-color: rgba(209, 163, 106, 0.4);
 }
 
 .logo-glow {
@@ -605,23 +616,9 @@ a {
   opacity: 1;
 }
 
+/* MODIFIÉ : Badge "Fait main" supprimé - le style reste pour compatibilité mais caché */
 .floating-badge {
-  position: absolute;
-  top: 30px;
-  right: -20px;
-  background: var(--gradient-gold);
-  color: var(--color-dark);
-  padding: 15px 30px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 14px;
-  box-shadow: var(--shadow-lg);
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  display: none; /* Badge caché */
 }
 
 /* About Content */
@@ -1048,6 +1045,14 @@ a {
     width: 100%;
   }
   
+  .logo {
+    padding: 12px 20px;
+  }
+  
+  .logo img {
+    height: 70px;
+  }
+  
   .hero {
     min-height: 600px;
   }
@@ -1076,8 +1081,12 @@ a {
     --section-padding: 60px;
   }
   
+  .logo {
+    padding: 10px 15px;
+  }
+  
   .logo img {
-    height: 70px;
+    height: 60px;
   }
   
   .hero-title {
